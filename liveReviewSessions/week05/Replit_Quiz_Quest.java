@@ -1,0 +1,40 @@
+package week05;
+
+import java.util.Scanner;
+
+public class Replit_Quiz_Quest {
+    public static void main(String[] args) {
+        Scanner scan  = new Scanner(System.in);
+
+        System.out.println("What is the farthest planet in the solar system?");
+        System.out.println("a) Venus?");
+        System.out.println("b) Pluto?");
+        System.out.println("c) neptune?");
+
+    /*    String result = scan.next();
+
+         switch (result){
+            case "a" :
+                System.out.println(" a is wrong");break;
+            case "b" :
+                System.out.println(" b is correct");break;
+            case "c" :
+                System.out.println(" c is wrong");break;
+            default:
+                System.out.println(result + " is not a valid answer");break;
+
+        }
+
+     */
+
+        char res = scan.next().charAt(0); ////// onemli
+
+                if(res=='a' || res== 'c') {
+                    System.out.println("wrong");
+                } else {
+                    System.out.println("correct");
+                }
+
+
+    }
+}
